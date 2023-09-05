@@ -1,0 +1,162 @@
+.footer1{
+    background:rgb(7, 34, 34) ;
+    .content{
+        text-align: center;
+        margin: 5% 0px;
+        font-family: 'Anton', sans-serif;
+        color: white;
+        font-family: cursive;
+        h5{
+            color: #9C7C57;
+            font-family:"system-ui";
+        }
+        input[type="text"],button{
+            border: none;
+            outline: none;
+            padding: 15px;
+            color: #807e7d;
+            background: rgb(11, 46, 46);
+            font-family: cursive;
+
+        }
+        button{background: rgb(4, 15, 15);}
+        .subscribe{margin: 0 27%;width: 50%;}
+    }
+}
+
+
+.footer2{
+    background:rgb(7, 41, 41);
+    padding: 20px;
+    p{color:#9C7C57}
+    ul{
+        margin: 0 52%;
+       width: 33%;
+        li{
+            float: left;
+            list-style-type: none;
+            margin: 0px 4px;
+            border: 1px solid gray;
+            padding-bottom: 6px;
+            padding-top: 7px;
+                        border-radius: 3px;
+            cursor: pointer;
+            width: 11%;
+            line-height: 25%;
+            text-align: center;
+            transition: all .5s ease-in-out;
+        }
+        a{color: white}
+    }
+    .fa-comment{
+    background: white;
+    padding: 5px;
+    /* width: 37px; */
+    color: rgb(7, 41, 41);
+    position: sticky;
+    /* text-align: center; */
+    margin: 0 52%;
+    border-radius: 5px;
+    font-size: 24px;
+    cursor: pointer;
+    }
+}
+
+h5{
+    color: rgb(7, 41, 41);
+}
+button{
+    background: rgb(7, 41, 41);
+    color: white;
+    border: none;
+    outline: none;
+    padding:8px;
+    font-size: 15px;
+}
+.feedBack{
+
+  padding: 3px 14px;
+
+}
+.feedBack:after{
+    content: "";
+    position: absolute;
+    bottom: 129px;
+    right: 34.2rem;
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-right: 36px solid #fff;
+    border-bottom: 25px solid transparent;
+
+}
+.scroll{
+    position: relative;
+    .fa-comment{
+        position:fixed;
+        bottom: 23px;
+        right: 26px;
+        background: white;
+        padding: 5px;
+        color: rgb(7, 41, 41);
+        border-radius: 5px;
+        font-size: 24px;
+        cursor: pointer;
+        z-index:22222222222
+    }
+}
+.fa-times{float: right;}
+
+@media (max-width: 767px ){/* mobile & tablet*/
+    .footer1 .content .subscribe{
+        margin: 0 0%;
+        width: 95%;
+    }
+    .footer1 .subscribe-btn{
+        width: 40% !important;
+    }
+    .footer2 ul{
+        width: 100%;
+        margin: 0px -20%;
+
+    }
+    .footer2 ul li{
+
+        padding: 5px;
+    font-size: 11px;
+    width: 14%;
+    }
+    .feedBack{
+        padding: 30px;
+    }
+    img{display: none;}
+}
+.footer2 ul li:hover{
+    background:white;
+}
+.footer2 ul li:hover a{
+    color: rgb(7, 41, 41) !important;
+}
+@media (min-width: 768px) and (max-width:991px){ /* small screen */
+   .footer1 .content .subscribe{
+        margin: 0 0%;
+        width: 95%;
+    }
+    .footer1 .subscribe-btn{
+        width: 40% !important;
+    }
+    .footer2 ul{
+        margin: 0 7%;
+        width: 68%;
+
+    }
+
+
+}
+@media (min-width: 992px) and (max-width:1199px) { /* medium screen */
+.footer1 .subscribe-btn{
+    width: 51%;
+}
+
+}

@@ -1,0 +1,111 @@
+/* You can add global styles to this file, and also import other style files */
+
+// @import '~ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+// @import '~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+// @import "~animate.css/animate.css";
+
+html, body { height: 100%;background: rgb(1, 16, 17); }
+html{
+    scroll-behavior: smooth;
+}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.popover {
+    max-width: 600px  !important;
+}
+.mat-form-field-ripple {
+    background-color: white !important;
+}
+// .mat-form-field-appearance-fill .mat-form-field-flex {
+//     background-color: #9C7C57 !important;
+// }
+.mat-form-field-appearance-legacy .mat-form-field-underline {
+    background-color: #9C7C57 !important;
+}
+.mat-slide-toggle.mat-checked .mat-slide-toggle-thumb,.mat-slide-toggle.mat-checked .mat-slide-toggle-bar {
+    background-color:#0e6269 !important;
+}
+.mat-menu-panel {
+    background: #022629 !important;
+    min-width: 190px !important;
+    margin: 6px -42%;
+    a{
+    color:white !important;
+    }
+}
+.mat-menu-item {
+    padding:0px 73px !important;
+}
+.mat-step-header .mat-step-icon-selected{
+    background-color: #022629 !important;
+}
+.mat-step-icon{
+    background-color:gray
+}
+.mat-snack-bar-container {
+    top: 76px;
+    right: 40%;
+    position: absolute;
+    min-width: 18% !important;
+    width: 36%;
+    padding: 29px  !important;
+}
+
+    // .cdk-overlay-pane{
+        // left: 49%;
+        // top: 77%;
+        // position: absolute !important;
+        // width: 38%;
+        // height: 50%;
+
+// }
+.mat-tab-label .mat-tab-label-content{
+color: #9C7C57 !important;
+}
+.mat-tab-label {
+background: black !important;
+margin-left: 5px !important;
+}
+
+.mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar {
+background-color: transparent !important;
+}
+.mat-tab-body-content {
+overflow: hidden !important;
+}
+.mat-tab-list {
+    margin-left: 20% !important;
+    margin-bottom: 2%;
+}
+.mat-tab-body-content {
+   background: black !important;
+    margin-left: 5% !important;
+    overflow:  hidden !important;
+    padding: 30px !important;
+}
+
+.mat-tab-header-pagination-controls-enabled .mat-tab-header-pagination {
+background: white !important;
+}
+@media (max-width: 767px ){/* mobile & tablet*/
+    .mat-tab-list {
+        margin-left: 0% !important;
+    }
+    .mat-tab-body-content {
+        margin-left: 1% !important;
+        padding: 5px !important;
+    }
+
+}
+
+.mat-mdc-dialog-container{
+  width: 400px !important;
+}
+.mdc-text-field--filled:not(.mdc-text-field--disabled)
+{
+  background-color: rgb(9, 49, 49) !important;
+  color: white !important;
+}
+.mdc-text-field:not(.mdc-text-field--disabled) .mdc-floating-label {
+  color: white !important;
+  font-size: 15px;
+}

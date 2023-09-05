@@ -1,0 +1,46 @@
+<div class="login mt-5 mb-5">
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-5 mt-5 mb-5">
+            <div class="form-container">
+          <form [formGroup]="formBuild" (ngSubmit)="login()">
+              <mat-form-field>
+                  <mat-label>Email</mat-label>
+                <input type="email" matInput formControlName="email" #email>
+                </mat-form-field>
+                <br>
+                <mat-form-field>
+                    <div class="d-flex">
+                        <div>
+                        <mat-label>password</mat-label>
+                      <input [type]="showPass? 'password':'text'"  matInput formControlName="password" #password>
+                    </div>
+                    <div>
+                      <button (click)="showPass = !showPass"  type="button" class="pass-btn">
+                      <!-- <mat-icon>{{showPass ? 'visibility_off':'visibility'}}</mat-icon> -->
+                    </button>
+                </div>
+                </div>
+                    </mat-form-field>
+                      <div class="d-flex justify-content-center">
+                      <button type="submit" class="btn-login mt-4">Login</button>
+                    </div>
+          </form>
+        </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-7 mt-5 mb-5 ml-5">
+            <div class="content">
+          <div class="img1 h-25">
+              <img src="assets/images/23.jpg" class="w-100 h-100" alt="">
+          </div>
+          <div class="img2">
+              <img src="assets/images/14.jpg" class="w-100 h-100" alt="">
+          </div>
+          <div class="img3 h-25">
+                <img src="assets/images/09.jpg" class="w-100 h-100" alt="">
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+</div>

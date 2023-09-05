@@ -1,0 +1,67 @@
+.header{
+    background: url(../../../assets/images/landing-img.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .content{
+        text-align: center;
+    margin: 8% 0px;
+    color: white;
+    }
+}
+
+.hidden-list{
+    display: none;
+    margin: -49px -73%;
+    position: absolute;
+    background: white;
+    width: 73%;
+    padding: 49px;
+}
+
+.menu-item{list-style-type: none;font-size: 16px;}
+.menu-item:hover .hidden-list{
+    display: block;
+}
+.menu{
+    animation: translateUp 5s infinite;
+    margin: 15% 0px;
+}
+.item-img{
+    overflow: hidden;
+}
+img{
+    transition: all 1s ease-in-out;
+}
+img:hover{
+    transform: scale(1.5);
+}
+@keyframes translateUp{
+    0%{
+      transform: translateY(20px);
+    }
+    50%{
+        transform: translateY(-20px);
+
+    }
+    100%{
+        transform: translateY(20px);
+
+    }
+}
+.hidden-list2{
+    margin: -49px 70%;
+}
+
+@media (max-width: 767px ){/* mobile & tablet*/
+    .hidden-list,.hidden-list2 {
+        margin: -337px -2%;
+    }
+}
+    @media (min-width: 768px) and (max-width:991px){ /* small screen */ 
+        .hidden-list,.hidden-list2 {
+            margin: -77px 35%;
+            width: 40%;        }
+    }
+    @media (min-width: 992px) and (max-width:1199px) { /* medium screen */
+    }
